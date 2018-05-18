@@ -1,0 +1,22 @@
+{
+  "name": "personal-mern",
+  "version": "1.0.0",
+  "description": "solo project",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Thibsey/personal-project.git"
+  },
+  "author": "Thibs",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Thibsey/personal-project/issues"
+  },
+  "homepage": "https://github.com/Thibsey/personal-project#readme",
+  "dependencies": {
+    "npm": "^6.0.1"
+  }
+}
