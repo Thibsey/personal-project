@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Index from './route-controle/index';
+import Index from './components/index/index';
 import './App.css';
 
 class App extends Component {
@@ -9,7 +9,6 @@ class App extends Component {
             <Router>
                 <Switch>
                     <Route exact path='/' component={Index}/>
-                    
                 </Switch>
             </Router>
         );
