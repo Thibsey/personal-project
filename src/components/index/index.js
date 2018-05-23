@@ -10,14 +10,14 @@ class Index extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            isloggedin: true
+            isloggedin: false
         }
         this.componentDidMount = this.componentDidMount.bind(this);
     }
     componentDidMount() {
-        axios.get('').then((res) => {
+        axios.get("http://localhost:8000/api/isloggedin").then(res => {
             if (!res.data) {
-                return this.setState({ isloggedin: res.data })
+                return this.setState({ isloggedin: res.data });
             }
         });
     }
