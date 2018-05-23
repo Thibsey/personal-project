@@ -50,6 +50,11 @@ class Index extends Component {
                     error: res.data.errors
                 });
             }
+            axios.get("http://localhost:8000/api/isloggedin").then(res => {
+                if (!res.data) {
+                    return this.setState({ isloggedin: res.data });
+                }
+            });
             // return (window.location.href = "/");
         });
     }
