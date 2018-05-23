@@ -41,7 +41,7 @@ function loginUser(req, res) {
             req.session.user = user;
             req.session.isLoggedIn = true;
             res.send(user);
-            return res.send({ message: "You are signed in" });
+            // return res.send({ message: "You are signed in" });
         })
         .catch(function (error) {
             console.log(error);

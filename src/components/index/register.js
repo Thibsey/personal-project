@@ -7,7 +7,7 @@ export default class Register extends Component {
         super(props);
         this.state = {
             firstName: "",
-            firstName: "",
+            lastName: "",
             email: "",
             email_confirm: "",
             password: "",
@@ -77,7 +77,8 @@ export default class Register extends Component {
                             <div className="input-group">
                                 <span className="input-group-addon"><span className="glyphicon glyphicon-user"></span></span>
                                 <input 
-                                    type="text" name="lastName" 
+                                    type="text" 
+                                    name="lastName" 
                                     className="form-control" 
                                     placeholder="Last Name"
                                     onChange={this.changeHandler}
